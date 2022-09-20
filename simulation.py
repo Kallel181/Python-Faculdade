@@ -1,3 +1,5 @@
+"Simulação da lei dos grandes numeros para uniforme(0,1) convergindo para ln(2)"
+
 from cmath import e
 import numpy as np
 import math as mt
