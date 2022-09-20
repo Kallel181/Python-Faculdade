@@ -8,12 +8,12 @@ while True:
     N = input("Digite o numero de interações, ou digite uma string para sair: ")
     try:
         N = int(N)
-    except:
+    except:#quebra de loop quando houve erro na transformação para inteiro
         print("String inserida")
         break
 
     sum = 0
-    unif = np.random.uniform(size=N)    
+    unif = np.random.uniform(size=N)#por padrão a uniforme já é gerada no intervalo (0,1)    
     for i in unif:
         sum += 1/(1+i)
     
